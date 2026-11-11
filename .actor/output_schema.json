@@ -1,10 +1,13 @@
 {
-  "actorSpecification": 1,
-  "fields": {
+  "actorOutputSchemaVersion": 1,
+  "title": "B2B Jobs & Hiring Signals Output",
+  "description": "Normalized jobs and company hiring growth signals dataset",
+  "type": "object",
+  "properties": {
     "dataset": {
-      "title": "Normalized Jobs & Hiring Signals Dataset",
-      "description": "Clean tabular dataset containing extracted open jobs, department distribution, remote tags, and tech stack demand signals.",
-      "template": "https://api.apify.com/v2/datasets/{{defaultDatasetId}}/items?clean=true&format=json"
+      "title": "Jobs & Signals Dataset",
+      "type": "string",
+      "template": "{{links.apiDefaultDatasetUrl}}/items?format=json"
     }
   }
 }
