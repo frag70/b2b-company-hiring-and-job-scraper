@@ -1,0 +1,10 @@
+{
+  "actorSpecification": 1,
+  "fields": {
+    "dataset": {
+      "title": "Normalized Jobs & Hiring Signals Dataset",
+      "description": "Clean tabular dataset containing extracted open jobs, department distribution, remote tags, and tech stack demand signals.",
+      "template": "https://api.apify.com/v2/datasets/{{defaultDatasetId}}/items?clean=true&format=json"
+    }
+  }
+}

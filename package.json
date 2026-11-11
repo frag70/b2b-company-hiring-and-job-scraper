@@ -1,0 +1,12 @@
+{
+  "name": "@frag70/b2b-company-hiring-and-job-scraper",
+  "version": "0.1.0",
+  "description": "MCP server and Standby API for scraping company job listings and hiring signals across Greenhouse, Lever, and Ashby ATS boards",
+  "main": "mcp_server.py",
+  "bin": {
+    "company-jobs-mcp": "./mcp_server.py"
+  },
+  "keywords": ["mcp", "job-scraper", "greenhouse", "lever", "ashby", "hiring-signals", "b2b-leads", "apify"],
+  "author": "Thomas Fragrante",
+  "license": "Apache-2.0"
+}

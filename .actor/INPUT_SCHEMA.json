@@ -1,0 +1,40 @@
+{
+  "title": "B2B Company Job Scraper & Hiring Signals Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "companies": {
+      "title": "Company Domains or ATS Slugs",
+      "type": "array",
+      "description": "List of company domains (e.g. ['stripe.com', 'figma.com', 'linear.app']) or ATS board slugs (e.g. ['stripe', 'palantir', 'linear'])",
+      "editor": "json",
+      "prefill": ["stripe.com", "linear.app", "figma.com"]
+    },
+    "company": {
+      "title": "Single Company Domain or Slug",
+      "type": "string",
+      "description": "Single company domain or ATS board slug for fast Standby execution (e.g. 'stripe.com' or 'palantir')",
+      "editor": "textfield"
+    },
+    "keyword": {
+      "title": "Role or Tech Keyword Filter",
+      "type": "string",
+      "description": "Optional keyword filter to filter jobs by title (e.g. 'Engineer', 'Sales', 'Python', 'AI')",
+      "editor": "textfield"
+    },
+    "remoteOnly": {
+      "title": "Remote Roles Only",
+      "type": "boolean",
+      "description": "If enabled, only returns positions marked as Remote",
+      "default": false
+    },
+    "maxJobsPerCompany": {
+      "title": "Max Jobs Per Company",
+      "type": "integer",
+      "description": "Maximum number of jobs to return per company (default: 50, 0 for unlimited)",
+      "default": 50,
+      "minimum": 0,
+      "maximum": 1000
+    }
+  }
+}

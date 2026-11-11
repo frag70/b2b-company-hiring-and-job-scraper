@@ -1,0 +1,31 @@
+{
+  "actorSpecification": 1,
+  "name": "b2b-company-hiring-and-job-scraper",
+  "title": "B2B Company Job Scraper & Hiring Signals API (Greenhouse, Lever, Ashby)",
+  "description": "Zero-proxy Standby API and bulk scraper extracting verified open jobs, department growth, tech stack signals, and remote ratios across Greenhouse, Lever, and Ashby ATS boards.",
+  "version": "0.1.0",
+  "usesStandbyMode": true,
+  "defaultRunMemoryMbytes": 512,
+  "input": "./INPUT_SCHEMA.json",
+  "output": "./output_schema.json",
+  "pricingInfo": {
+    "pricingModel": "PAY_PER_EVENT",
+    "events": {
+      "actor-start": {
+        "priceUsd": 0.0001,
+        "title": "Standby Request Event",
+        "description": "Base HTTP request invocation"
+      },
+      "job-extracted": {
+        "priceUsd": 0.0005,
+        "title": "Job Extracted & Normalized",
+        "description": "Per extracted and normalized job record with department, location, and tech stack tags"
+      },
+      "company-hiring-analyzed": {
+        "priceUsd": 0.002,
+        "title": "Company Hiring Signals Analysis",
+        "description": "Per company hiring velocity analysis (headcount, department breakdown, remote ratio, tech demands)"
+      }
+    }
+  }
+}
