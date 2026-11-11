@@ -1,7 +1,7 @@
 {
   "actorSpecification": 1,
   "name": "b2b-company-hiring-and-job-scraper",
-  "title": "B2B Company Job Scraper & Hiring Signals API (Greenhouse, Lever, Ashby)",
+  "title": "B2B Job Scraper & Hiring Signals API (ATS)",
   "description": "Zero-proxy Standby API and bulk scraper extracting verified open jobs, department growth, tech stack signals, and remote ratios across Greenhouse, Lever, and Ashby ATS boards.",
   "version": "0.1.0",
   "usesStandbyMode": true,

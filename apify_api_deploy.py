@@ -15,7 +15,7 @@ from pathlib import Path
 
 ACTOR_DIR = Path(__file__).parent.resolve()
 ACTOR_SLUG = "b2b-company-hiring-and-job-scraper"
-ACTOR_TITLE = "B2B Company Job Scraper & Hiring Signals API (Greenhouse, Lever, Ashby)"
+ACTOR_TITLE = "B2B Job Scraper & Hiring Signals API (ATS)"
 ACTOR_DESC = "Zero-proxy Standby API and bulk scraper extracting verified open jobs, department growth, tech stack signals, and remote ratios across Greenhouse, Lever, and Ashby ATS boards."
 REPO_NAME = f"frag70/{ACTOR_SLUG}"
 REPO_URL = f"https://github.com/{REPO_NAME}#main"
